@@ -13,52 +13,42 @@
   "paths": {
     "/titles": {
       "get": {
-        "summary": "Get all titles",
-        "description": "Returns a paginated list of titles. You can filter by type and genre.",
+        "summary": "Get all titles with optional filters and pagination",
         "parameters": [
           {
             "name": "page",
             "in": "query",
-            "description": "Page number (default 1)",
-            "required": false,
-            "schema": {
-              "type": "integer",
-              "default": 1
-            }
+            "schema": { "type": "integer" },
+            "description": "Page number for pagination"
           },
           {
             "name": "limit",
             "in": "query",
-            "description": "Number of results per page (default 10)",
-            "required": false,
-            "schema": {
-              "type": "integer",
-              "default": 10
-            }
+            "schema": { "type": "integer" },
+            "description": "Number of results per page"
           },
           {
             "name": "type",
             "in": "query",
-            "description": "Filter by type (Movie or TV Show)",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "enum": ["Movie", "TV Show"]
-            }
+            "schema": { "type": "string" },
+            "description": "Filter by type (e.g., Movie, TV Show)"
           },
           {
             "name": "genre",
             "in": "query",
-            "description": "Filter by genre (partial match, case-insensitive)",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
+            "schema": { "type": "string" },
+            "description": "Filter by genre (e.g., Drama, Comedy)"
+          },
+          {
+            "name": "release_year",
+            "in": "query",
+            "schema": { "type": "integer" },
+            "description": "Filter by release year (e.g., 2019)"
           }
         ],
         "responses": {
           "200": {
-            "description": "A list of titles",
+            "description": "List of titles",
             "content": {
               "application/json": {
                 "schema": {
