@@ -8,8 +8,11 @@ const Title = require('../models/Title');
  *   get:
  *     summary: Get all titles with optional filters and pagination
  */
+
+// Get all titles with filters and pagination
 router.get('/', async (req, res) => {
   try {
+    // query params
     const { page = 1, limit = 10, type, genre, release_year } = req.query;
     const filter = {};
 
@@ -17,6 +20,7 @@ router.get('/', async (req, res) => {
     if (genre) filter.listed_in = new RegExp(genre, 'i');
     if (release_year) filter.release_year = parseInt(release_year);
 
+    // Query the database, add pagination
     const titles = await Title.find(filter)
       .limit(parseInt(limit))
       .skip((page - 1) * limit);

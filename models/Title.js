@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+// Schema for title model
+
 const TitleSchema = new mongoose.Schema({
   title: String,
   type: String,
@@ -9,4 +11,5 @@ const TitleSchema = new mongoose.Schema({
   country: String
 });
 
+// Export
 module.exports = mongoose.model('Title', TitleSchema);

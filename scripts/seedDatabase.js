@@ -1,3 +1,5 @@
+// Seeds databse with info from CSV file
+
 require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
@@ -23,6 +25,7 @@ const seed = async () => {
           country: row.country
         });
       })
+      // Result
       .on('end', async () => {
         await Title.insertMany(results);
         console.log(`Database seeded with ${results.length} records!`);
