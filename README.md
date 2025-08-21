@@ -58,6 +58,8 @@ Learning how to integrate Swagger documentation smoothly with Express
 
 - Screenshots -
 
+<img width="1920" height="1101" alt="Screenshot 2025-08-21 at 10 18 57 AM" src="https://github.com/user-attachments/assets/03aabf0b-af6e-4b44-960f-b5fab3d78b9d" />
+
 - Getting Started -
 
 Prerequisites:
