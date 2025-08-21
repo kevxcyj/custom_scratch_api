@@ -2,7 +2,7 @@ Custom Scratch API
 
 About the Developer
 
-Hi, I’m [Your Name], a full-stack developer with a strong passion for building clean, scalable, and user-friendly web applications. I enjoy blending creativity with problem solving — from making fun frontend projects to building APIs that power them.
+Hi, I’m Kevin Cyrus Jr. , a full-stack developer with a strong passion for building clean, scalable, and user-friendly web applications. I enjoy blending creativity with problem solving — from making fun frontend projects to building APIs that power them.
 
 https://www.linkedin.com/in/kevincyrusjr/
 
@@ -69,7 +69,7 @@ npm or yarn
 - Installation -
 - 
 # Clone the repository
-git clone https://github.com/yourusername/custom_scratch_api.git
+git clone https://github.com/kevxcyj/custom_scratch_api.git
 
 # Navigate into project
 cd custom_scratch_api
