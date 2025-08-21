@@ -62,6 +62,35 @@
           }
         }
       }
+    },
+    "/titles/{id}": {
+      "get": {
+        "summary": "Get a single title by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string" },
+            "description": "The ID of the title"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A single title",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Title"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Title not found"
+          }
+        }
+      }
     }
   },
   "components": {
