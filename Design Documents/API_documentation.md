@@ -1,6 +1,9 @@
 # API Documentaion
 
-`http://localhost:3000/api`
+`http://localhost:3000/`
+
+## Swagger Docs
+'http://localhost:3000/api-docs/#/'
 
 ## Endpoints
 
